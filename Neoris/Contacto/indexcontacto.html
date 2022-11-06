@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de contacto</title>
+        <link rel="stylesheet" href="estilocontacto.css" type="text/css">
+        <link href="moves.js">
+        <link rel="icon" href="logoc.png">
+    </head>
+    <body style="background-color: #71520e;">
+        <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center">Formulario de contacto</h1>
+            <p id="description" class="description text-center">
+              Al completar estas secciones acepta ser contactado por nuestra organizacion
+            </p>
+          </header>
+          <form id="contactoform">
+            <div class="grupoform">
+              <label id="name-label" for="name">Nombre</label>
+              <input
+                tipo="text"
+                nombre="nombre"
+                id="nombre"
+                class="form-control"
+                placeholder="Ingrese su nombre"
+                required
+              />
+            </div>
+            <div class="grupoform">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="mailform"
+                placeholder="Ingrese su email"
+                required
+              />
+            </div>
+            
+            <div class="grupoform">
+              <p>Escribanos su consulta y la responderemos a la brevedad</p>
+              <textarea
+                id="comentario"
+                class="input-textarea"
+                name="comment"
+                placeholder="Haga click para empezar a escribir"
+              ></textarea>
+            </div>
+    
+            <div class="grupoform">
+              <button type="enviar" id="enviar" class="enviar-boton">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <footer>
+            <br><img src="banner.png">
+        </footer>
+      </body>
+</html>
